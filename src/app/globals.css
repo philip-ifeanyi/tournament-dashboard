@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/swis721-blk-bt');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +16,10 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+html, body {
+  font-family: 'Swis721 Blk BT', sans-serif;
 }
 
 body {
