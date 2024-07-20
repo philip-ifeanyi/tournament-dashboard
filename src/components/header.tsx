@@ -10,7 +10,7 @@ import { HiUser } from "react-icons/hi2";
 
 const Header = () => {
   return (
-    <header className="bg-[#121212] text-[#E5E4E4] flex items-center justify-between p-4 px-16 border-b border-[#242424]">
+    <header className="bg-[#121212] text-[#E5E4E4] flex items-center justify-between p-4 lg:px-16 border-b border-[#242424]">
       <div className="flex items-center">
         <Image src={Logo} alt="Logo" className="w-[98px] mx-auto" />
       </div>

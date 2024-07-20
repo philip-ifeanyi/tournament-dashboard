@@ -20,9 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`min-h-screen font-sans`}>
         <Header/>
-        <div className={`flex flex-col md:flex-row`}>
+        <div className={`flex flex-col md:flex-row w-screen`}>
           <Sidebar/>
-          <main className="flex-1 p-4 max-w-screen-xl mx-auto">
+          <main className="flex-1 p-4 w-[100%] max-w-screen-xl mx-auto">
             {children}
           </main>
         </div>

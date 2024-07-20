@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Leaderboards = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full overflow-x-scroll'>
       <table className="w-full">
         <thead className=''>
           <tr className='bg-[#242424] border-t border-b border-[#2E2E2E] text-[#7E7F7F] text-left'>

@@ -34,7 +34,7 @@ const TournamentDetails = () => {
           <BiChevronLeft className='text-2xl group-hover:text-[#7E7F7F]'/>
           <p className='group-hover:text-[#7E7F7F]'>Back</p>
         </header>
-        <div>
+        <div className='w-full'>
           <Image src={Banner} alt='' className='w-full my-5' quality={100} />
           <div>
             <p className='text-2xl font-bold'>Call of Duty</p>

@@ -13,7 +13,7 @@ const Tournaments = () => {
 
   return (
     <>
-      <section className="grid gap-5 grid-cols-2">
+      <section className="grid gap-5 grid-cols-1 lg:grid-cols-2">
         {
           cardData.map((info, index) => {
             return <Card 
@@ -44,7 +44,7 @@ const Tournaments = () => {
               <IoChevronDown className="text-[#7E7F7F]"  /></div>
           </div>
         </header>
-        <div className="grid grid-cols-3 gap-8 text-[#7E7F7F]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 text-[#7E7F7F]">
           {
             listings.map((listing, id) => {
               return (
