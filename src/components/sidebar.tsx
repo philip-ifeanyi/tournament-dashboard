@@ -19,7 +19,7 @@ const Sidebar = () => {
         ☰
       </button>
 
-      <aside className={`bg-[#121212] text-[#7E7F7F] w-[30%] h-[92dvh] min-h-full ${isOpen ? 'block' : 'hidden'} md:block`}>
+      <aside className={`bg-[#121212] text-[#7E7F7F] w-[25%] 2xl:w-[15%] h-[92dvh] min-h-full ${isOpen ? 'block' : 'hidden'} md:block`}>
         <div className="p-4 py-8 flex flex-col justify-between h-[100%]">
           <nav className="mt-4">
             <ul className='flex flex-col gap-4'>
