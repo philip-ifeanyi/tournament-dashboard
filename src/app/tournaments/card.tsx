@@ -13,7 +13,7 @@ interface CardProps {
   extraStyle ?: string;
 }
 
-const hFont = localFont({ src: '../../../public/fonts/Swiss 721 BT.woff' });
+// const hFont = localFont({ src: '../../../public/fonts/Swiss 721 BT.woff' });
 
 const Card: React.FC<CardProps> = ({ hasButton, title, desc, image, icon, text, extraStyle }) => {
   return (
@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({ hasButton, title, desc, image, icon, text, 
         {
           hasButton 
             ? <Button text={text ? text : ""} icon={icon ? icon : ""} style={"bg-[#8BC72F] text-[#0A0A0A]"} />
-            : <div className='group flex gap-1 cursor-pointer hover:text-[#7E7F7F]'>
+            : <div className='group flex gap-1 cursor-pointer hover:text-[#7E7F7F] group-hover:fill-[#7E7F7F]'>
                 <Image src={icon ? icon : ""} alt='' className='group-hover:fill-[#7E7F7F]'/>
                 <p className='font-semibold'>{text}</p>
               </div>

@@ -2,10 +2,13 @@
 import React, { useState } from 'react';
 import { sideNav } from '@/data/data';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isActive = (path: string) => pathname === path;
 
   return (
     <>
@@ -23,7 +26,7 @@ const Sidebar = () => {
               {
                 sideNav.map((data, index) => {
                   return (
-                    <Link href={data.path} className="flex items-center gap-2 hover:bg-gray-700 px-6 py-4" key={index}>
+                    <Link href={data.path} className={`flex items-center gap-2 hover:bg-gray-700 px-6 py-4 ${isActive(data.path) ? "bg-gray-700" : ""}`} key={index}>
                       <Image src={data.icon} alt='image'/>
                       <p>{data.name}</p>
                     </Link>

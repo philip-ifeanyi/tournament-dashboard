@@ -1,12 +1,18 @@
 import { NavLink } from "react-router-dom";
+import Image, { StaticImageData } from 'next/image';
 
 interface TabProps {
   name: string;
+  path: string;
+  icon: string | StaticImageData
 }
 
-const Tab:React.FC<TabProps> = ({ name }) => {
+const Tab:React.FC<TabProps> = ({ name, path, icon }) => {
   return (
-    <NavLink className={({isActive}) => `text-sm md:text-[17px] py-2 px-3 font-clash hover:cursor-pointer ${isActive ? "rounded-none font-semibold border-b-4 border-b-gray-800" : ""}`} to={`/dashboard/settings/${name.toLowerCase()}`}>{name}</NavLink>
+    <NavLink to={path} className={({isActive}) => `flex items-center gap-2 hover:bg-gray-700 px-6 py-4 ${isActive ? "bg-gray-700" : ""}`}>
+      <Image src={icon} alt='image'/>
+       <p>{name}</p>
+    </NavLink>
   )
 }
 
